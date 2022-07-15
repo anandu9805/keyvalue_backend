@@ -10,6 +10,7 @@ class HealthController extends AbstractController {
   }
   protected initializeRoutes() {
     this.router.get(`${this.path}`, this.healthResponse);
+    
   }
   private healthResponse = async (request: RequestWithUser, response: Response, next: NextFunction) => {
     try {

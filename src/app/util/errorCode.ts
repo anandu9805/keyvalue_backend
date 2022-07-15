@@ -2,6 +2,10 @@
  * Custom error codes to be send to UI to display proper a response
  */
 export const ErrorCodes: { [key: string]: CustomError } = {
+    DEPARTMENT_WITH_ID_NOT_FOUND: {
+        CODE: "DEPARTMENT_WITH_ID_NOT_FOUND",
+        MESSAGE: "Department with given id not found",
+    },
     UNAUTHORIZED: {
         CODE: "UNAUTHORIZED",
         MESSAGE: "User is not allowed to perform this operation",
@@ -17,6 +21,10 @@ export const ErrorCodes: { [key: string]: CustomError } = {
     VALIDATION_ERROR: {
         CODE: "VALIDATION_ERROR",
         MESSAGE: "Validation failed error",
+    },
+    FOREIGN_KEY_ERROR: {
+        CODE: "FOREIGN_KEY_ERROR",
+        MESSAGE: "FOREIGN_KEY error",
     }
 };
 
